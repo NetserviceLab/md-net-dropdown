@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>md-net-dropdown example</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css">
+    <link rel="stylesheet" href="../src/css/md-net-dropdown.css">
+</head>
+<body ng-app="ExampleApp">
+
+
+<div style="padding:50px">
+
+
+    <md-net-dropdown>
+        <md-button>Actions</md-button>
+        <ul class="dropdown-menu" role="menu" ng-cloak>
+            <li><md-button>Action</md-button></li>
+            <li><md-button>Another action</md-button></li>
+            <li><md-button>Something else here</md-button></li>
+            <li class="md-net-divider"></li>
+            <li><md-button>Separated link</md-button></li>
+        </ul>
+    </md-net-dropdown>
+
+</div>
+
+
+
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Angular Material Dependencies -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+
+
+<!-- Angular Material Javascript version 0.8 used here -->
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.js"></script>
+
+<!-- Directive md-net-dropdown -->
+<script src="../src/directives/md-net-dropdown.js"></script>
+
+<script>
+    var app = angular.module('ExampleApp', ['ngMaterial','mdNetservice']);
+</script>
+</body>
+</html>
